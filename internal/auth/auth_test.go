@@ -14,8 +14,7 @@ func TestGetAPIKeyValid(t *testing.T) {
 	if err != nil {
 		t.Fatalf("unexpected error: %v", err)
 	}
-        if key != "wrong-key" {
-
+        if key != "my-secret-key" {
 		t.Fatalf("expected 'my-secret-key', got %s", key)
 	}
 }
