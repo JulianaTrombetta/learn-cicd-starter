@@ -14,7 +14,7 @@ func TestGetAPIKeyValid(t *testing.T) {
 	if err != nil {
 		t.Fatalf("unexpected error: %v", err)
 	}
-        if key != "my-secret-key" {
+	if key != "my-secret-key" {
 		t.Fatalf("expected 'my-secret-key', got %s", key)
 	}
 }
@@ -28,4 +28,3 @@ func TestGetAPIKeyMissing(t *testing.T) {
 		t.Fatalf("expected error when Authorization header is missing")
 	}
 }
-
