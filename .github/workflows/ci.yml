@@ -1,9 +1,8 @@
 cat > .github/workflows/ci.yml <<'YAML'
-name: ci
+name: CI
 
 on:
-  push:
-    branches: [main]
+  
   pull_request:
     branches: [main]
 
